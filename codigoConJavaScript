@@ -1,9 +1,0 @@
-   <!-- AGREGAR CON JAVASCRIPT -->
-              <li class="lista__tarea">
-                <div>
-                  <p class="tarea">Aprender a escribir en inglés</p>
-                  <p class="tarea__fecha">12-28-2021</p>
-                </div>
-
-                <input type="radio" class="tarea__input" />
-              </li>
