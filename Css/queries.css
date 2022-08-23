@@ -1,0 +1,29 @@
+/* 1160px ---> 72.5em */
+@media (max-width: 72.5em) {
+  .contenedor-grid {
+    grid-template-columns: unset;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0;
+  }
+  .contenedor-tareas {
+    height: auto;
+  }
+}
+
+/* 600px ---> 37.5em */
+@media (max-width: 37.5em) {
+  .tareas__header {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .lista__tareas {
+    padding: 0 2rem;
+  }
+}
+
+/* 350px ----> 21.875em */
+@media (max-width: 21.875em) {
+  html {
+    font-size: 56.25%;
+  }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+      as="font"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preload" href="Css/styles.css" as="style" />
+    <link rel="stylesheet" href="/Css/styles.css" />
+    <link rel="preload" href="Css/app.css" as="style" />
+    <link rel="stylesheet" href="/Css/app.css" />
+    <link rel="preload" href="Css/queries.css" as="style" />
+    <link rel="stylesheet" href="Css/queries.css" />
+
+    <title>ToDo-List</title>
+  </head>
+  <body>
+    <header class="encabezado">
+      <h1 class="encabezado__titulo">Organiza tus tareas</h1>
+    </header>
+
+    <div class="contenedor">
+      <main class="contenedor-grid">
+        <form id="formulario" class="formulario">
+          <div class="formulario__encabezado">
+            <h2 class="formulario__titulo">Organiza tus pendientes</h2>
+
+            <p class="formulario__descripcion">
+              Pon en orden tus pendientes hoy mismo. Registra cada uno de ellos
+            </p>
+          </div>
+
+          <div class="formulario__campo">
+            <label class="formulario__campoLabel"
+              >Ingresa una nueva tarea</label
+            >
+            <textarea
+              class="formulario__campoTextarea"
+              id="campoTarea"
+            ></textarea>
+          </div>
+
+          <a href="#" id="btnAgregar" class="formulario__boton">
+            <p>Agregar &rarr;</p>
+          </a>
+
+          <div id="alertas" class="alertas">
+            <!-- AQUI SE INSERTAN LAS ALERTAS -->
+          </div>
+        </form>
+        <div class="contenedor-tareas">
+          <header class="tareas__header">
+            <h2 class="tareas__titulo">Tus pendientes</h2>
+            <a id="btnBorrarTareas" class="borrar-tareas" href="#"
+              >Borrar tareas hechas</a
+            >
+          </header>
+
+          <div class="contenedor-lista">
+            <ul id="listaTareas" class="lista__tareas">
+              <!-- AQUI SE INSERTAN LAS TAREAS CREADAS CON JS -->
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div class="contenedor">
+      <footer class="footer">
+        <p>Saulo Román Santillán Nava</p>
+        <p>Derechos Reservados &copy;</p>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

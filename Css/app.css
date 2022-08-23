@@ -1,0 +1,54 @@
+/* ESTILOS DE LAS ALERTAS */
+.alerta {
+  font-weight: 700;
+  margin-top: 5rem;
+  padding: 2rem 0;
+  text-align: center;
+  color: #fff;
+}
+
+.alerta--error {
+  background-color: #ee5253;
+}
+
+.alerta--exito {
+  background-color: #10ac84;
+}
+
+/* ESTILOS DE LAS TAREAS */
+
+.lista__tarea {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border: 1px solid #e8e8e8;
+  border-radius: 1.1rem;
+  padding: 1.2rem 3.6rem;
+
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.tarea {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.tarea__input {
+  border: 0px;
+  width: 20%;
+  height: 2em;
+}
+
+.tarea__input:hover {
+  cursor: pointer;
+}
+
+.tarea__fecha {
+  font-weight: normal;
+}
+
+.lista__tarea .tarea--deshabilitada {
+  color: #ddd;
+}
